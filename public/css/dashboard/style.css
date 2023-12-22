@@ -1,0 +1,634 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  padding: 8rem 10% 2rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/Location/KSI\ :\ KB03.png);
+  height: 100vh;
+  border-bottom-left-radius: 50px;
+  background-repeat: repeat;
+  background-size: cover;
+  border-top-right-radius: 50px;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.overlay .text-center {
+  align-items: center;
+}
+
+.overlay h1 {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.overlay h5 {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Sejarah */
+#sejarah {
+  margin-top: 20px;
+}
+#sejarah .card h2 {
+  font-weight: 700;
+  color: white;
+}
+
+#sejarah .card h5 {
+  font-weight: 300;
+  color: white;
+}
+
+#sejarah .px-4 img {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+
+#sejarah .card-body {
+  background-color: #01425d;
+}
+
+#sejarah .px-4 img:hover {
+  border: none;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.hori-timeline .events {
+  border-top: 3px solid #e9ecef;
+}
+
+.hori-timeline .events .event-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+/* Visi misi */
+.home .visi-misi .card {
+  height: 350px;
+  width: 1250px;
+  perspective: 1000px;
+  margin: 20px;
+  border: none;
+}
+
+.home .visi-misi .card-inner {
+  width: 1250px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.home .card:hover .card-inner {
+  transform: rotateX(-180deg);
+}
+
+.home .visi-misi .card .card-inner .card-front h3,
+.card-back h3 {
+  font-size: 40px;
+}
+
+.home .visi-misi .card .card-inner .card-front p,
+.card-back li {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.home .visi-misi .card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  border: none;
+}
+
+.home .visi-misi .card-front {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: black;
+  transform: rotateX(0deg);
+}
+
+.home .visi-misi .card-back {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: black;
+  transform: rotateX(180deg);
+}
+/* Visi-misi done */
+
+/* About Us Page */
+.sejarah {
+  padding: 8rem 10% 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #26c6da;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #26c6da;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -14px;
+}
+
+/* Sejarah Done */
+
+/* Budaya start */
+
+.budaya .container-fluid {
+  padding: 2rem 8rem;
+  background-color: rgb(1, 66, 93);
+}
+
+.budaya .container-fluid h1 {
+  padding-bottom: 2rem;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.budaya .container-fluid p {
+  font-size: 22px;
+  color: white;
+}
+
+.budaya .col img {
+  padding: 1rem;
+  background-color: orange;
+  border-radius: 20px;
+}
+
+/* Budaya end */
+
+/* Review start */
+.review .container-fluid {
+  padding: 2rem 8rem;
+}
+
+.review .container-fluid .col {
+  border: 2px solid rgb(255, 165, 0);
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  border-style: inset;
+}
+
+.review .btn-box {
+  justify-content: center;
+  display: flex;
+}
+
+.review .box {
+  width: 220px;
+  height: auto;
+  float: left;
+  transition: 0.5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.review .box:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.review .box:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.review .box:hover {
+  box-shadow: 0 5px 15px orange(0, 0, 0, 0.5);
+}
+
+.review .box:hover:before {
+  border-color: orange;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.review .box:hover:after {
+  border-color: orange;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.5s;
+}
+
+.review button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+/* Review end */
+
+/* Lokasi Page */
+/* Title */
+.title {
+  padding: 8rem 10% 1rem;
+}
+
+.title .row .col-4 {
+  border-right: 3px solid black;
+}
+
+.title .row .col-4 h1 {
+  text-align: end;
+}
+
+/* Map */
+.map {
+  padding: 0 18rem 2rem;
+}
+
+.map img {
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.map img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0);
+}
+
+/* Lokasi */
+.lokasi {
+  padding: 2rem 8% 3rem;
+}
+
+.lokasi .col-md-4 .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.lokasi .col-md-4 .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0);
+}
+
+/* Extra */
+.extra .container {
+  padding-top: 2rem;
+}
+
+.extra .container .col-md-5 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+.extra .container .col-md-5:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0);
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .home .visi-misi .card {
+    width: 320px;
+    margin: 5px;
+    margin: 0 auto;
+  }
+
+  .home .visi-misi .card-inner {
+    width: 320px;
+    height: 100%;
+  }
+
+  .home .visi-misi .card-front,
+  .card-back {
+    width: 320px;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .home .visi-misi .card .card-inner .card-front p {
+    font-weight: 300px;
+    font-size: 18x;
+  }
+
+  .home .visi-misi .card .card-inner .card-back li {
+    font-weight: 300px;
+    font-size: 14px;
+  }
+
+  .home .visi-misi .card .card-inner .card-front h3,
+  .card-back h3 {
+    font-size: 30px;
+  }
+
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+
+  .aboutus .visi-misi .card {
+    width: 320px;
+    margin: 10px auto;
+  }
+
+  .aboutus .visi-misi .card-inner {
+    width: 320px;
+    height: 100%;
+  }
+
+  .aboutus .visi-misi .card-front,
+  .card-back {
+    width: 320px;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .aboutus .visi-misi .card .card-inner .card-front p {
+    font-weight: 300px;
+    font-size: 18x;
+  }
+
+  .aboutus .visi-misi .card .card-inner .card-back li {
+    font-weight: 300px;
+    font-size: 14px;
+  }
+
+  .aboutus .visi-misi .card .card-inner .card-front h3,
+  .card-back h3 {
+    font-size: 30px;
+  }
+
+  .budaya .container-fluid {
+    padding: 2rem;
+  }
+
+  .budaya .col img {
+    padding: 0.5rem;
+  }
+
+  .review .container-fluid {
+    padding: 4rem;
+  }
+
+  .review .col {
+    padding: 0.5rem;
+  }
+
+  .review.box {
+    width: auto;
+    margin-left: 12px;
+  }
+
+  .map {
+    padding: 2rem;
+  }
+
+  .title .row .col-8 {
+    padding-right: 0;
+  }
+
+  .lokasi .col-md-4 .card {
+    margin: 10px;
+  }
+
+  .extra .container {
+    font-size: 90%;
+    padding: 2rem 2rem;
+  }
+}
+
+
+@media (min-width: 1140px) {
+  .hori-timeline .events .event-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+  .hori-timeline .events .event-list .event-date {
+    top: 12px;
+  }
+}
+.bg-soft-primary {
+  background-color: rgba(64, 144, 203, 0.3) !important;
+}
+.bg-soft-success {
+  background-color: rgba(71, 189, 154, 0.3) !important;
+}
+.bg-soft-danger {
+  background-color: rgba(231, 76, 94, 0.3) !important;
+}
+.bg-soft-warning {
+  background-color: rgba(249, 213, 112, 0.3) !important;
+}
+.card {
+  border: none;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+  box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+}
+
+@media (max-width: 1200px) {
+
+    .update h2 {
+        font-size: 5em;
+        padding-bottom: 10px; 
+    }
+
+    .update p {
+        font-size: 1.5em; 
+        padding-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .update h3 {
+        font-size: 1.7em; 
+        margin-left: 20px;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .custom-svg-container {
+        width: 50%;
+        height: auto;
+    }
+
+    .svg-container{
+        margin-top: 100px;
+    }
+
+    .image-container img {
+        max-width: 90%; 
+        height: auto; 
+        border-radius: 0px 0px 50px 0px;
+    }
+
+
+}

@@ -1,0 +1,138 @@
+/* Kontak Start */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.box1 {
+    flex: 7;
+    position: relative;
+}
+
+.box1 img {
+    max-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+.text-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(0%, -10%);
+    text-align: left;
+    color: white;
+}
+
+.text-box {
+    font-family: Outfit;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 77px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.text-content h2,
+.text-content p {
+    margin-bottom: 15px; /* Sesuaikan nilai ini sesuai kebutuhan Anda */
+}
+
+.box2 {
+    flex: 3;
+    background-color: #13435c;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-top: 5rem;
+}
+
+.main-container .card {
+    background-color: #e0e0e0;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: -60%;
+    margin-top: 70px;
+    margin-right: 70px;
+}
+
+.box0 {
+    margin-left: 20rem;
+}
+
+.box3 {
+    flex: 5;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px auto; /* Center horizontally */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    width: 70%;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2.5rem;
+    margin-right: 2rem;
+}
+
+p {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.orange-wrapper {
+    background: #f36f27;
+    border-radius: 60px 300px 60px 60px;
+    padding: 20px;
+    width: 722px;
+    height: 633px;
+    border-radius: 50px, 300px, 50px, 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+}
+
+.main-container .card form {
+    margin-top: 20px;
+    width: 100%; /* Full width */
+}
+
+.main-container .card form input,
+.card1 form input {
+    border-radius: 30px;
+    width: 100%; /* Full width */
+}
+
+.main-container.card form textarea,
+.card1 form textarea {
+    border-radius: 30px;
+    width: 100%; /* Full width */
+}
+
+.main-container.card form button,
+.card1 form button {
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #13435c;
+    border-color: #13435c;
+    width: 100%; /* Full width */
+}
+
+/* Kontak End */

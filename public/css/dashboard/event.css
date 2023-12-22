@@ -1,0 +1,140 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 925px;
+    flex-shrink: 0;
+    background-color: #F36F27;
+    margin-top: 10px;
+    border-radius: 0px 0px 0px 200px;
+}
+
+.container-news{
+    padding: 4rem;
+    margin: 1rem;
+}
+
+.custom-row{
+    margin-bottom: 2rem;
+}
+
+.update-container {
+    flex: 1;
+    padding-top: 135px;
+    text-align: center;
+    width: 100%;
+}
+
+.update img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.svg-container {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 0px; 
+}
+
+.update h2 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Outfit;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+
+.update p {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.update h3 {
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px; /* 150% */
+    letter-spacing: 0.56px;
+    margin-bottom: 10px;
+
+}
+
+.custom-svg-container {
+    width: 436px;
+    height: 420px;
+    flex-shrink: 0;
+}
+
+.news-entry {
+    border-top: 1px solid var(--neutral-30, #B8B8B8);
+    padding-top: 20px; 
+}
+
+.border-top {
+    border-top: 1px solid var(--neutral-30, #B8B8B8);
+    margin-top: 20px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+@media (max-width: 1200px) {
+
+    .update h2 {
+        font-size: 5em;
+        padding-bottom: 10px; 
+    }
+
+    .update p {
+        font-size: 1.5em; 
+        padding-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .update h3 {
+        font-size: 1.7em; 
+        margin-left: 20px;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .custom-svg-container {
+        width: 50%;
+        height: auto;
+    }
+
+    .svg-container{
+        margin-top: 100px;
+    }
+
+    .image-container img {
+        max-width: 90%; 
+        height: auto; 
+        border-radius: 0px 0px 50px 0px;
+    }
+
+
+}

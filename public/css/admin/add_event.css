@@ -1,0 +1,53 @@
+.container{
+    background-color:#FFEEEE!important;
+    padding-top: 10px;
+    border-radius: 3px;
+}
+
+.content-wrapper h1 {
+    font-size: 24px;
+    color: black;
+    font-family: Outfit;
+    letter-spacing: 1px;
+}
+.form-actions a {
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    font-family: Outfit;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.form-actions a.btn-inverse:hover {
+    background-color: rgba(255, 0, 0, 0.42);
+    color: black;
+}
+
+.form-actions input[type="submit"] {
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-family: Outfit;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.form-actions input[type="submit"]:hover {
+    background-color: lightblue;
+}
+
+@media (max-width: 767.98px) {
+    #searchBar {
+        display: none;
+    }
+
+    #dropdownMenuButton1 {
+        display: none;
+    }
+
+    
+}
